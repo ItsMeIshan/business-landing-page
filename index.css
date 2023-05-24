@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.pagination li {
+  list-style: none;
+  padding: 0.5em;
+  color: #2a333e;
+  padding-bottom: 0.2em;
+}
+.pagination li:hover {
+  border-bottom: 2px solid red;
+}
+
+.header-container {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*  Hero SECTION */
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+}
+.hero-description-container {
+  margin-top: 70px;
+  margin-left: 50px;
+  z-index: 1;
+  max-width: 500px;
+}
+.hero-image img {
+  width: 90%;
+}
+.hero-heading-byline {
+  color: red;
+  font-size: 16px;
+}
+.hero-heading {
+  font-size: 182px;
+  font-family: "Abhaya Libre", serif;
+  color: red;
+}
+.hero-description {
+  color: #2a333e;
+  font-size: 20;
+  margin-bottom: 50px;
+}
+.add-to-cart {
+  text-decoration: none;
+  color: white;
+  padding: 1em 2.5em;
+  background-color: red;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: -1px 28px 36px -19px #ea0025;
+}
+.book-a-table {
+  background-color: #2a333e;
+  text-decoration: none;
+  color: white;
+  padding: 1em 2.5em;
+  border-radius: 10px;
+}
+.buttons {
+  margin-bottom: 40px;
+}
+.timings {
+  display: flex;
+  color: #2a333e;
+}
+.lunch-timing {
+  margin-right: 60px;
+}
+.timings h3 {
+  font-size: 26px;
+}
+.timings span {
+  font-size: 20px;
+  font-weight: 200;
+  color: #4f4f4f;
+}
+
+/*  Menu Section  */
+
+.menu-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-section h3 {
+  font-size: 20px;
+  color: #2a333e;
+}
+.menu-heading {
+  font-family: "Abhaya Libre", serif;
+  font-size: 60px;
+  color: #ea0025;
+  text-align: center;
+}
+.menu-cards {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -3px 9px 26px -11px #2a333e;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 1rem;
+}
+.dish-name {
+  color: #2a333e;
+  font-size: 20px;
+  font-weight: 500;
+}
+.dish-description {
+  font-size: 16px;
+  color: #2a333e;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.card-hero {
+  width: 150px;
+  align-self: center;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-actions {
+  display: flex;
+}
+.heart-btn {
+  background-color: #ea0025;
+  padding: 0.3em 0.5em;
+  border-radius: 10px;
+  margin-right: 0.3rem;
+}
+.share-btn {
+  background-color: #2a333e;
+  padding: 0.3em 0.5em;
+  border-radius: 10px;
+}
+.all-menu-btn {
+  margin-bottom: 1rem;
+}
+
+/* Contact Us section*/
+
+.contact-us-section {
+  min-height: 100vh;
+  background-color: rgba(234, 0, 0, 0.1);
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.contact-description {
+  margin: 1rem;
+  flex-shrink: 2;
+}
+.contact-description h3 {
+  color: #2a333e;
+  font-size: 20px;
+}
+.contact-description h2 {
+  color: red;
+  font-family: "Abhaya Libre", serif;
+  font-size: 62px;
+}
+.contact-description p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #2a333e;
+}
+.contact-form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 3;
+}
+.contact-form div label {
+  color: #2a333e;
+}
+.form-inputs {
+  border-radius: 8px;
+  padding: 1em;
+  border: none;
+}
+.contact-form div {
+  margin-top: 1rem;
+}
+.contact-form div a {
+  text-decoration: none;
+  color: white;
+  padding: 1em 2.5em;
+  background-color: red;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: -1px 28px 36px -19px #ea0025;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 862px) {
+  .hero-section {
+    justify-content: center;
+  }
+  .hero-image img {
+    display: none;
+  }
+  .hero-heading {
+    font-size: 78px;
+  }
+  .hero-description-container {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    max-width: 400px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-to-cart {
+    margin: 1rem;
+  }
+  .timings {
+    justify-content: center;
+  }
+  .hero-description {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+  .user {
+    display: none;
+  }
+  .pagination li {
+    padding: 0.15em;
+  }
+  .hero-image img {
+    display: none;
+  }
+  .hero-description-container {
+    max-width: 250px;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .contact-description {
+    margin: 2rem;
+  }
+  .contact-description h2 {
+    font-size: 40px;
+  }
+  .menu-heading {
+    font-size: 40px;
+  }
+}
